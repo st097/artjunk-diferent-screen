@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtJunk</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&family=Merriweather&family=Montserrat:wght@400;900&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Merriweather&family=Montserrat:wght@400;900&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+<body>
+   <header>
+    <div class="firstSection">
+    <div class="navbar">
+        <div class="logo"><a href="#">ArtJunk</a></div>
+        <ul class="links">
+            <li ><a href="home">Home</a></li>
+            <li ><a href="about">About</li>
+            <li ><a href="artists">Artists</li>
+            <li ><a href="careers">Careers</a></li>
+            <li ><a href="nes">News</a></li>
+            <li ><a href="company">Company</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown_menu ">
+        <li ><a href="home">Home</a></li>
+        <li ><a href="about">About</li>
+        <li ><a href="artists">Artists</li>
+        <li ><a href="careers">Careers</a></li>
+        <li ><a href="nes">News</a></li>
+        <li ><a href="company">Company</a></li>
+        <li><a href="#" class="action_btn">Get started</a></li>
+    </div>
+   </header>
+
+   <main>
+    <section>
+       <hr>
+       <h1 class="firstH1">Art pieces made easy accessible for everyone</h1>
+       <p class="firstP">Learn, buy and trade art pieces of your favourite artist around the world
+        by using crypto currencies.
+       </p>
+       <button class="btn_lrn">Learn more</button>
+    </section>
+   </main>
+   </div>
+
+   <h1 class="cardsH1">Newest reads</h1>
+
+   <section class="container">
+
+    <div class="cards">
+        <div class="card-image car-1"></div>
+        <h6>5 August, 2022</h6>
+        <h3>France seeks to protect Russia's Morozov collection from seizure as masterpieces return home</h3>
+        <button class="read">Read more →</button>
+
+    </div>
+
+    <div class="cards">
+        <div class="card-image car-2"></div>
+        <h6>5 August, 2022</h6>
+        <h3>Picasso's muse as sea creature--will it break $100m at Sotheby's New York sale?</h3>
+        <button class="read">Read more →</button>
+
+    </div>
+
+    <div class="cards">
+        <div class="card-image car-3 "></div>
+        <h6>5 August, 2022</h6>
+        <h3>Venice Biennale 2022:all the national pavilions, artists and curators</h3>
+        <button class="read">Read more →</button>
+
+    </div>
+   </section>
+
+
+
+
+
+    
+   <script>
+     const toggleBtn = document.querySelector('.toggle_btn')
+     const toggleBtnIcon = document.querySelector('.toggle_btn i')
+     const dropDownMenu = document.querySelector('.dropdown_menu')
+
+     toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+
+     }
+
+   </script>
+    
+</body>
+</html>
